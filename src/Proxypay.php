@@ -39,9 +39,9 @@ class Proxypay
         return $curl->response;
     }
 
-    public function createPayment(float $amount, int $expireDays = 5, array $customFields = [])
+    public function createPayment(float $amount, int $expireDays = 5, int $referenceID = null, array $customFields = [])
     {
-        $referenceID = $this->generateReferenceID();
+        $referenceID = !isset($referenceID) ? $this->generateReferenceID() : $referenceID;
         if (!is_integer($referenceID)) {
             throw new \InvalidArgumentException("Error generation reference ID");
         }
