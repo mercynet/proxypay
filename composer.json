@@ -19,6 +19,5 @@
             "email": "paulo@craftsys.com.br"
         }
     ],
-    "minimum-stability": "dev",
-    "version": "0.1.2"
+    "minimum-stability": "dev"
 }
