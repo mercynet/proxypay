@@ -1,0 +1,23 @@
+{
+    "name": "mercynet/proxypay",
+    "description": "A very simple php sdk to integrate proxypay",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "php-curl-class/php-curl-class": "dev-master",
+        "ramsey/uuid": "^4.2.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mercynet\\Proxypay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paulo Silva",
+            "email": "paulo@craftsys.com.br"
+        }
+    ],
+    "minimum-stability": "dev"
+}
